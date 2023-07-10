@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: black;
+    color:azure;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.portada{
+    margin-top: 30px;
+    height: 500px;
+    background-image: url(../imagenes/partada.jpg);
+    background-size: cover;
+    position: relative;
+    
+} 
+
+.portada .logo{
+   padding: 0px;
+   margin: 0px;
+   height: 200px;
+   background: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+ 
+  
+}
+.navbar {
+    display: block;
+    width: 100%;
+}
+.navbar li{
+    display: inline-block;
+    margin: 30px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.tpindex {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.st{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+.video iframe {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 50px;
+    border: 7px solid blanchedalmond;
+    border-radius: 50px;
+
+}
+    
+   
+.musica{
+    display: flex;
+}
+
+.musica iframe{
+    width: 50%;
+    padding: auto;
+    margin:auto;
+    border: 7px solid blanchedalmond;
+    border-radius: 50px;
+    position: relative;
+   
+   
+
+   
+}
+.galeria {
+    width: 100%;
+    display: flex;
+
+}
+
+.galeria .foto {
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: 10px 10px 61px -28px rgba(255,255,255,1);
+}
+
+.integrantes li {
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    padding: 0 5px;
+    font-family: 'Anton', 'Lucida Sans';
+    font-size: 30px;  
+}
+
+.gacetilla{
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.fechas{
+    display: block;
+    width: 100%;
+    
+}
+
+.insta{
+    display: inline-block;
+    padding: 10px 10px ;
+    margin: 10px 10px;
+    width: 30%;
+    
+}
+
+.formulario{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(58, 56, 56);
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+label{
+    background-color: none;
+    display:grid;
+    font-size: 25px;
+}
+.boton{
+    background-color: dimgray;
+    padding: 10px;
+    margin: 10px;
+border-radius: 20px;
+}
+
+footer{
+    padding: 30px;
+    margin: 30px;
+    display: block;
+}
+.redes a i {
+    display:inline-block;
+    font-size: 30px;
+    color: ghostwhite;
+    margin: 10px;
+    padding: 10px
+    
+}
