@@ -32,11 +32,13 @@
   
 }
 .navbar {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+
     width: 100%;
 }
 .navbar li{
-    display: inline-block;
+    display: block;
     margin: 30px;
     padding: 30px;
     font-size: 30px;
@@ -55,11 +57,19 @@
     text-align: center;
     font-size: 40px;
 }
+
+.video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
 .video iframe {
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 50px;
-    border: 7px solid blanchedalmond;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid blanchedalmond;
     border-radius: 50px;
 
 }
@@ -73,7 +83,7 @@
     width: 50%;
     padding: auto;
     margin:auto;
-    border: 7px solid blanchedalmond;
+    border: 2px solid blanchedalmond;
     border-radius: 50px;
     position: relative;
    
@@ -147,10 +157,12 @@ border-radius: 20px;
 footer{
     padding: 30px;
     margin: 30px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .redes a i {
-    display:inline-block;
+    display: inline-block;
     font-size: 30px;
     color: ghostwhite;
     margin: 10px;
