@@ -14,12 +14,12 @@
 
 
 <body >
-    <header>
+   <header>
         <div class="portada">
             <img class="logo" src="../imagenes/logoDaCapo.png" alt="Logo Da Capo">
         </div>
         <nav>
-            <ul class="navbar">
+            <ul class="navegador">
                 <li><a href="../index.html" >Inicio</a></li>
                 <li><a href="nosotros.html" >Nosotros</a></li>
                 <li><a href="proxFechas.html" >Proximas Fechas</a></li>
@@ -30,18 +30,38 @@
     
    <main>
     <form class="formulario" action="">
-        <label for="datos">Nombre completo</label>
-        <input type="text" name="nomApell" id="" placeholder="Ingrese Nombre y Apellido" required>  
-        <label for="mail">E-Mail</label>
-        <input type="E-Mail" name="mail" id="mail" placeholder="Ingrese E-Mail"required> 
-        <label for="cel">Celular</label>
-        <input type="tel" name="tel" id="tel" placeholder="Ingrese su Numero de Celular"required>  
-        <label for="mensaje">Mensaje:</label>
-        <input type="text-area" name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje">
-        <label for="newsletter">Desea suscribirse a nuestra Newsletter?:</label> 
-        <input type="checkbox" name="newsletter" id="newsletter" value="acepto">
-        <button class="boton"  type="submit">Enviar</button>
-        <button class="boton" type="Reset">Borrar</button>
+        <div class=" dato dato-nombre">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>  
+        </div>
+
+        <div class=" dato dato-apellido">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido" required>  
+        </div>
+                     
+        <div class="dato dato-cel">
+            <label for="cel">Celular</label>
+            <input type="tel" name="tel" id="tel" placeholder="Ingrese su Numero de Celular"required>
+        </div>
+
+        <div class="dato dato-mail">
+            <label for="mail">E-Mail</label>
+            <input type="E-Mail" name="mail" id="mail" placeholder="Ingrese E-Mail"required>
+        </div> 
+          
+        <div class="dato dato-texto">
+            <label for="mensaje">Mensaje:</label>
+            <input type="text-area" name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje">
+        </div>
+        
+        <div class="dato-newsle">
+            <label for="newsletter">Queres enterarte de nuevas fechas y novedades?</label> 
+            <input type="checkbox" name="newsletter" id="newsletter" value="acepto">
+        </div>
+        
+        <button class="boton enviar"  type="submit">Enviar</button>
+        <button class="boton borrar" type="Reset">Borrar</button>
 
     </form>
    </main>

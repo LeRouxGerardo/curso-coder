@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="shortcut icon" href="../imagenes/logo-favi.png" type="image/x-icon">
-
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
 
 
 <body >
@@ -18,7 +18,7 @@
             <img class="logo" src="../imagenes/logoDaCapo.png" alt="Logo Da Capo">
         </div>
         <nav>
-            <ul class="navbar">
+            <ul class="navegador">
                 <li><a href="../index.html" >Inicio</a></li>
                 <li><a href="nosotros.html" >Nosotros</a></li>
                 <li><a href="proxFechas.html" >Proximas Fechas</a></li>
@@ -30,30 +30,71 @@
         <h2 class="st">INTEGRANTES</h2>
         
     </main>
-    <section class="galeria">
-        <img class="foto" src="../imagenes/ferB.jpg" alt="Fernando Bajista"/>
-        <img class="foto" src="../imagenes/ferG.jpg" alt="Fernando Guitarrista"/>
-        <img class="foto" src="../imagenes/javi.jpg" alt="Javier cantante"/>
-        <img class="foto" src="../imagenes/eze.jpg" alt="Ezequiel Guitarrista"/>
-        <img class="foto" src="../imagenes/nicon.jpg" alt="Nicolas Baterista"/>
-                
+      
+    <section class="carrousel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../imagenes/ferB.jpg" class="d-block w-100" alt="Fernando Bajista">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fernando Bilbao</h5>
+                <p>Bajo</p>
+              </div>
+             </div>
+            <div class="carousel-item">
+              <img src="../imagenes/ferG.jpg" class="d-block w-100" alt="Fernando Guitarrista">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fernando Bobbio</h5>
+                 <p>Guitarra</p>
+               </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/javi.jpg" class="d-block w-100" alt="Javir cantante">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Javier Marquez</h5>
+                    <p>Voz</p>
+                </div>
+                </div>
+             <div class="carousel-item">
+                <img src="../imagenes/eze.jpg" class="d-block w-100" alt="Ezequiel Guitarrista">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ezequiel Cerino</h5>
+                  <p>Guitarra</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+            <img src="../imagenes/nicon.jpg" class="d-block w-100" alt="Nicolas Baterista">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nicolas Rassino</h5>
+              <p>Bateria</p>
+            </div>
+            </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+           </button>
+        </div>
     </section>
-    
-    <div class="integrantes">
-        <ul>
-            <li>Fernando Bilbao</li>
-            <li>Fernando Bobbio</li>
-            <li>Javier Marquez</li>
-            <li >Ezequiel Cerino</li>
-            <li >Nicolas Rassino</li>
-        </ul>
-    </div>
-    <p class="gacetilla">Da Capo es una banda de Rock formada en Cordoba Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit a id, nisi officia voluptatem voluptatibus commodi incidunt nobis, ut fuga itaque porro quaerat, aut quae hic laudantium rem! Dolorum, tenetur? Ab aliquid expedita suscipit enim non! Aliquam totam, nulla velit delectus natus reprehenderit neque sint assumenda laborum eos consequatur dicta?</p>
-</body>
 
 
-<footer>
-    <div class="redes">
+        <p class="gacetilla">Da Capo es una banda de Rock formada en Cordoba Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit a id, nisi officia voluptatem voluptatibus commodi incidunt nobis, ut fuga itaque porro quaerat, aut quae hic laudantium rem! Dolorum, tenetur? Ab aliquid expedita suscipit enim non! Aliquam totam, nulla velit delectus natus reprehenderit neque sint assumenda laborum eos consequatur dicta?</p>
+    </body>
+
+
+    <footer>
+        <div class="redes">
         <a href="https://www.facebook.com/DaCapoBanda"target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://www.instagram.com/dacapotributopearljam/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://soundcloud.com/da-capo-banda"target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
@@ -61,6 +102,8 @@
         <span>dacapobandacba@gmail.com</span>
     </div>
    
-</footer>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </html>
