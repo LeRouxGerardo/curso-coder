@@ -246,6 +246,7 @@ body {
     align-items: start;
     justify-content: start;
     padding-top: 20px;
+    transition: 10, 5s;
   }
   .navegador .menu:hover + ul {
     left: 0px;
