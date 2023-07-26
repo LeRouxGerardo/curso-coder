@@ -1,0 +1,23 @@
+.gacetilla{
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+.fechas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.fechas .insta{
+    padding: 10px 10px ;
+    grid-column: 1/2;
+    height: 250px;
+}
+
+.fechas .mapa{
+    padding: 10px 10px;
+    grid-column: 2/4;
+
+}

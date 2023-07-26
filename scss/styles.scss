@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import "reset";
+@import "portada";
+@import "navegacion";
+@import "titulos";
+@import "multimedia";
+@import "fechas";
+@import "formulario";
+@import "footer";
+
+body{
+    background-color: black;
+}
+
+
+@media(max-width:576px){
+
+.navegador .menu{
+   display: block;
+   color: white;
+   font-size:50px;
+   margin: 20px;
+   
+}
+
+.navegador ul{
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background-color: rgba(255, 255, 255, 0.893);
+    width: 70vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 20px;
+}
+.navegador .menu:hover + ul{
+    left:0px
+}
+.navegador ul li a{
+    color: black;
+    font-size: 40px;
+}
+
+.formulario{
+    display: block;
+    }
+
+.formulario .dato{
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    }     
+
+
+
+}   
+
+
+
+
+
+@media(max-width:768px){
+.portada{
+    margin-top: 24px;
+    width: auto;
+    height: 200px;
+    
+} 
+
+.portada .logo{
+    width: 50%;
+    height: 100px;
+   
+}
+
+.navegador ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.navegador li{
+    display: inline-block;
+    padding: 16px 0;
+    font-size: 18px;
+}
+
+.navegador li a{
+    text-align:center;
+    display: block;
+}
+
+
+.video iframe {
+    width: 80%;
+    border: 2px solid blanchedalmond;
+    position: relative;
+}
+    
+   
+.musica{
+    display: flex;
+}
+
+.musica iframe{
+    width: 80%;
+    border: 2px solid blanchedalmond;
+    border-radius: 50px;
+    position: relative;
+     
+}
+
+.tpindex {
+     
+    font-size: 30px;
+}
+
+.st{
+    font-size: 20px;
+}
+
+.carousel{
+    height: 400px;
+
+} 
+
+.carousel-item img{
+
+    width: 60%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-caption, .carousel-caption h5, .carousel-caption p{
+    font-size: 35px;  
+}   
+
+.gacetilla{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fechas{
+    display: inline-block;
+}
+
+.fechas .insta{
+    display: block;
+    height: 800px;
+}
+
+.fechas .mapa{
+    display: block;
+    width: auto;
+}
+
+
+}
