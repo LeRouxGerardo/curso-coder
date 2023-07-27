@@ -15,10 +15,8 @@
   background-size: cover;
   position: relative;
 }
-
 .portada .logo {
   height: 200px;
-  background: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,12 +38,12 @@
   text-decoration: none;
   color: white;
 }
-
 .navegador .menu {
   display: none;
 }
 
 .tpindex {
+  color: white;
   margin: 20px;
   padding: 10px;
   text-align: center;
@@ -53,6 +51,7 @@
 }
 
 .st {
+  color: white;
   margin: 20px;
   padding: 10px;
   text-align: center;
@@ -65,7 +64,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .video iframe {
   width: 40%;
   padding: 10px;
@@ -77,7 +75,6 @@
 .musica {
   display: flex;
 }
-
 .musica iframe {
   width: 50%;
   padding: auto;
@@ -91,7 +88,6 @@
 /*IMAGENES*/
 .carousel {
   height: 550px;
-  background-color: transparent;
 }
 
 .carousel-item img {
@@ -101,7 +97,6 @@
 }
 
 .carousel-caption, .carousel-caption h5, .carousel-caption p {
-  background-color: transparent;
   font-size: 50px;
   text-shadow: -6px 13px 10px #000000;
 }
@@ -205,25 +200,24 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.redes a i {
+footer .redes a i {
   display: inline-block;
   font-size: 30px;
-  color: ghostwhite;
+  color: white;
   margin: 10px;
   padding: 10px;
 }
 
-/*.*/
-.cuerpo {
-  background-color: black;
-}
-
 .gacetilla {
+  color: white;
+  font-size: 25px;
   padding: 50px;
   margin: 0px;
   text-align: center;
-  font: 100px white;
+}
+
+.cuerpo {
+  background-color: black;
 }
 
 @media (max-width: 576px) {
@@ -231,7 +225,14 @@ footer {
     display: block;
     color: white;
     font-size: 50px;
-    margin: 20px;
+    margin: 10px;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+  .navegador ul:hover {
+    left: 0px;
+    z-index: 1;
   }
   .navegador ul {
     position: fixed;
@@ -244,10 +245,7 @@ footer {
     align-items: start;
     justify-content: start;
     padding-top: 20px;
-    transition: 50, 5s;
-  }
-  .navegador .menu:hover + ul {
-    left: 0px;
+    transition: 0, 5s;
   }
   .navegador ul li a {
     color: black;
@@ -274,13 +272,14 @@ footer {
     height: 100px;
   }
   .navegador ul {
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: wrap;
     overflow: scroll;
   }
   .navegador li {
     display: inline-block;
-    padding: 16px 0;
+    padding: 15px 0;
     font-size: 18px;
   }
   .navegador li a {
@@ -322,7 +321,7 @@ footer {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
   .fechas {
     display: inline-block;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import "reset";
+@import "variables";
 @import "portada";
 @import "navegacion";
 @import "titulos";
@@ -12,20 +13,26 @@
 .cuerpo{
     background-color: black;
 }
-.gacetilla{
-    padding: 50px;
-    margin: 0px;
-    text-align: center;
-    font: 100px white;
-}
+
+
 @media(max-width:576px){
+
 
 .navegador .menu{
    display: block;
-   color: white;
+   color: $color-secundario;
    font-size:50px;
-   margin: 20px;
+   margin: 10px;
    
+}
+
+.navegador .menu:hover + ul {
+    left: 0px;
+}
+
+.navegador ul:hover {
+    left: 0px;
+    z-index: 1;
 }
 
 .navegador ul{
@@ -39,12 +46,11 @@
     align-items: start;
     justify-content: start;
     padding-top: 20px;
-    transition: 50,5s;
+    transition: 0,5s;
 
 }
-.navegador .menu:hover + ul{
-    left:0px;
-}
+
+
 .navegador ul li a{
     color: black;
     font-size: 40px;
@@ -84,13 +90,14 @@
 }
 
 .navegador ul{
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: wrap;
     overflow: scroll;
 }
 .navegador li{
     display: inline-block;
-    padding: 16px 0;
+    padding: 15px 0;
     font-size: 18px;
 }
 
@@ -148,7 +155,7 @@
     padding: 10px;
     margin: 10px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .fechas{

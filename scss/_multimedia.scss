@@ -3,24 +3,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-}
-
-.video iframe {
-    width: 40%;
-    padding: 10px;
-    margin: 10px;
-    border: 4px solid blanchedalmond;
-    border-radius: 50px;
-
-}
+    iframe {
+        width: 40%;
+        padding: 10px;
+        margin: 10px;
+        border: 4px solid blanchedalmond;
+        border-radius: 50px;
     
-   
+    }
+}
+
+
+
 .musica{
     display: flex;
-}
 
-.musica iframe{
+iframe{
     width: 50%;
     padding: auto;
     margin:auto;
@@ -29,12 +27,12 @@
     position: relative;
      
 }
+}
 /*FIN REPRODUCTORES*/
 
 /*IMAGENES*/
 .carousel{
     height: 550px;
-    background-color: transparent;
 } 
 
 .carousel-item img{
@@ -46,8 +44,7 @@
 }
 
 .carousel-caption, .carousel-caption h5, .carousel-caption p{
-    background-color: transparent;
-    font-size: 50px;
+      font-size: 50px;
     text-shadow: -6px 13px 10px #000000;
 }   
 

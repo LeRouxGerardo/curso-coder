@@ -4,14 +4,13 @@
     background-image: url(../imagenes/partada.jpg);
     background-size: cover;
     position: relative;
+    .logo{
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+     
+     }
 } 
 
-.portada .logo{
-    height: 200px;
-    background: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
- 
- }
