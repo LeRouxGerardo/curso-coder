@@ -7,12 +7,17 @@
 @import "fechas";
 @import "formulario";
 @import "footer";
+@import "textos";
 
-body{
+.cuerpo{
     background-color: black;
 }
-
-
+.gacetilla{
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+    font: 100px white;
+}
 @media(max-width:576px){
 
 .navegador .menu{
@@ -34,11 +39,11 @@ body{
     align-items: start;
     justify-content: start;
     padding-top: 20px;
-    transition: 10,5s;
+    transition: 50,5s;
 
 }
 .navegador .menu:hover + ul{
-    left:0px
+    left:0px;
 }
 .navegador ul li a{
     color: black;

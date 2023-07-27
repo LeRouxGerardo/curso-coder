@@ -30,15 +30,14 @@
   justify-content: space-around;
   width: 100%;
 }
-
-.navegador li {
+.navegador ul li {
   display: block;
   padding: 30px;
   margin: 30px;
   font-size: 30px;
 }
-
 .navegador ul li a {
+  text-decoration: none;
   color: white;
 }
 
@@ -108,25 +107,16 @@
 }
 
 /*FIN IMAGENES*/
-.gacetilla {
-  padding: 50px;
-  margin: 0px;
-  text-align: center;
-  font-size: 30px;
-}
-
 .fechas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
 }
-
 .fechas .insta {
   padding: 10px 10px;
   grid-column: 1/2;
   height: 250px;
 }
-
 .fechas .mapa {
   padding: 10px 10px;
   grid-column: 2/4;
@@ -224,8 +214,16 @@ footer {
   padding: 10px;
 }
 
-body {
+/*.*/
+.cuerpo {
   background-color: black;
+}
+
+.gacetilla {
+  padding: 50px;
+  margin: 0px;
+  text-align: center;
+  font: 100px white;
 }
 
 @media (max-width: 576px) {
@@ -246,7 +244,7 @@ body {
     align-items: start;
     justify-content: start;
     padding-top: 20px;
-    transition: 10, 5s;
+    transition: 50, 5s;
   }
   .navegador .menu:hover + ul {
     left: 0px;
