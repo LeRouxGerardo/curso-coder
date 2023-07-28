@@ -1,17 +1,19 @@
 
-.fechas{
+.fecha{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    .insta{
-        padding: 10px 10px ;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    .insta iframe{
+        padding: 10px;
+        height: 700px;
         grid-column: 1/2;
-        height: 250px;
     }
-    .mapa{
-        padding: 10px 10px;
-        grid-column: 2/4;
+    .mapa iframe{
+        height: 700px;
+        width: 600px;
+        grid-column: 2/2;
     
     }
-    
+   
 }

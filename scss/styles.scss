@@ -17,62 +17,19 @@
 
 @media(max-width:576px){
 
-
-.navegador .menu{
-   display: block;
-   color: $color-secundario;
-   font-size:50px;
-   margin: 10px;
-   
-}
-
-.navegador .menu:hover + ul {
-    left: 0px;
-}
-
-.navegador ul:hover {
-    left: 0px;
-    z-index: 1;
-}
-
-.navegador ul{
-    position: fixed;
-    top: 0;
-    left: -500px;
-    background-color: rgba(255, 255, 255, 0.893);
-    width: 70vw;
-    height: 100vh;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    padding-top: 20px;
-    transition: 0,5s;
-
-}
-
-
-.navegador ul li a{
-    color: black;
-    font-size: 40px;
-}
-
-.formulario{
-    display: block;
+    .formulario{
+        display: block;
     }
 
-.formulario .dato{
-    display: flex;
-    row-gap: 5px;
-    flex-direction: column;
-    margin-bottom: 10px;
-    }     
+    .formulario .dato{
+        display: flex;
+        row-gap: 5px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }    
+    
 
-
-
-}   
-
-
-
+}
 
 
 @media(max-width:768px){
@@ -158,19 +115,24 @@
     font-size: 20px;
 }
 
-.fechas{
-    display: inline-block;
+
+
+.fecha{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    .insta iframe{
+        height: 400px;
+        grid-column: 1/2;
+    }
+    .mapa iframe{
+        height: 400px;
+        width: 350px;
+        grid-column: 2/2;
+    
+    }
+
+
 }
-
-.fechas .insta{
-    display: block;
-    height: 800px;
-}
-
-.fechas .mapa{
-    display: block;
-    width: auto;
-}
-
-
 }

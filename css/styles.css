@@ -23,23 +23,65 @@
   transform: translate(-50%, 50%);
 }
 
-.navegador ul {
+@media (max-width: 576px) {
+  .navegador {
+    width: 20px;
+  }
+}
+.navegador .menu {
+  display: none;
+}
+@media (max-width: 576px) {
+  .navegador .menu {
+    display: block;
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+}
+
+ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.navegador ul li {
+@media (max-width: 576px) {
+  ul {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background-color: rgba(255, 255, 255, 0.893);
+    width: 70vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 20px;
+    transition: 0, 5s;
+  }
+  ul:hover {
+    left: 0px;
+    z-index: 1;
+  }
+}
+ul li {
   display: block;
   padding: 30px;
   margin: 30px;
   font-size: 30px;
 }
-.navegador ul li a {
+ul li a {
   text-decoration: none;
   color: white;
 }
-.navegador .menu {
-  display: none;
+@media (max-width: 576px) {
+  ul li a {
+    color: black;
+    font-size: 30px;
+  }
 }
 
 .tpindex {
@@ -102,19 +144,20 @@
 }
 
 /*FIN IMAGENES*/
-.fechas {
+.fecha {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
 }
-.fechas .insta {
-  padding: 10px 10px;
+.fecha .insta iframe {
+  padding: 10px;
+  height: 700px;
   grid-column: 1/2;
-  height: 250px;
 }
-.fechas .mapa {
-  padding: 10px 10px;
-  grid-column: 2/4;
+.fecha .mapa iframe {
+  height: 700px;
+  width: 600px;
+  grid-column: 2/2;
 }
 
 .formulario {
@@ -170,6 +213,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid white;
+  padding-right: 200px;
 }
 
 .formulario .dato input:focus {
@@ -221,36 +265,6 @@ footer .redes a i {
 }
 
 @media (max-width: 576px) {
-  .navegador .menu {
-    display: block;
-    color: white;
-    font-size: 50px;
-    margin: 10px;
-  }
-  .navegador .menu:hover + ul {
-    left: 0px;
-  }
-  .navegador ul:hover {
-    left: 0px;
-    z-index: 1;
-  }
-  .navegador ul {
-    position: fixed;
-    top: 0;
-    left: -500px;
-    background-color: rgba(255, 255, 255, 0.893);
-    width: 70vw;
-    height: 100vh;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    padding-top: 20px;
-    transition: 0, 5s;
-  }
-  .navegador ul li a {
-    color: black;
-    font-size: 40px;
-  }
   .formulario {
     display: block;
   }
@@ -323,16 +337,19 @@ footer .redes a i {
     text-align: center;
     font-size: 20px;
   }
-  .fechas {
-    display: inline-block;
+  .fecha {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
-  .fechas .insta {
-    display: block;
-    height: 800px;
+  .fecha .insta iframe {
+    height: 400px;
+    grid-column: 1/2;
   }
-  .fechas .mapa {
-    display: block;
-    width: auto;
+  .fecha .mapa iframe {
+    height: 400px;
+    width: 350px;
+    grid-column: 2/2;
   }
 }
 
