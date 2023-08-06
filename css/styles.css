@@ -37,6 +37,11 @@
     height: 200px;
   }
 }
+@media (max-width: 576px) {
+  .portada {
+    height: 130px;
+  }
+}
 .portada .logo {
   height: 200px;
   position: absolute;
@@ -52,7 +57,7 @@
 }
 @media (max-width: 576px) {
   .portada .logo {
-    height: 85px;
+    height: 55px;
   }
 }
 
@@ -334,7 +339,7 @@
 }
 @media (max-width: 768px) and (max-width: 576px) {
   .formulario {
-    width: 450px;
+    width: auto;
   }
 }
 .formulario .dato input {
