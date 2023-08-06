@@ -404,6 +404,11 @@ footer .redes a i {
   margin: 10px;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  footer .redes a i {
+    font-size: 35px;
+  }
+}
 
 .gacetilla {
   color: white;
