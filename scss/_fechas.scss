@@ -1,19 +1,71 @@
 
 .fecha{
     display: grid;
-    gap: 10px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "insta mapa"
+    "insta info";
+    @media(max-width:576px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
-    .insta iframe{
-        padding: 10px;
-        height: 700px;
-        grid-column: 1/2;
+
+    .insta {
+        grid-area: insta;
+        padding-left: 50px;
+        
+        @media(max-width:768px){
+            padding-left: 25px;
+        }
+        @media(max-width:576px){
+            padding: 0px;
+            display: inline-block; 
+            align-items: center;  
+            width: 350px;
+        }
+          
     }
-    .mapa iframe{
-        height: 700px;
+    .mapa {
+        height: 350px;
+        grid-area: mapa;
+        @media(max-width:768px){
+            height: 200px;
+        }
+
+        @media(max-width:576px){
+            display: inline-block;   
+        }
+        
+        iframe{
+        
+            height: 350px;
+            width: 600px;
+        
+        @media(max-width:768px){
+            height: 200px;
+            width: 350px;
+        }
+    }
+    }
+    .info{
         width: 600px;
-        grid-column: 2/2;
-    
+        grid-area: info;
+        @media(max-width:768px){
+            width: 350px;
+        }
+        p{
+            @include resalta-texto($color-secundario,0px 3px 15px #000000);
+            font-size: 22px;
+            @media(max-width:768px){
+                font-size: 17px;
+            }
+        }
     }
-   
+
+
 }

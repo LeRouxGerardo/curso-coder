@@ -1,8 +1,12 @@
 .gacetilla {
-    color: $color-secundario;
-    font-size: 25px;
+    @include resalta-texto($color-secundario,0px 3px 15px #000000);
+    font-size: 30px;
     padding: 50px;
-    margin: 0px;
+    margin: 40px;
     text-align: center;
-    
+    @media(max-width:768px){
+      padding: 30px;
+      margin: 30px;
+      font-size: 20px;
+    }
   }

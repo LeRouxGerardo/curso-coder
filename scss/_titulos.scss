@@ -1,15 +1,26 @@
 .tpindex {
-    color: $color-secundario;
+    @include resalta-texto($color-secundario,0px 3px 15px #000000);
+    font-size: 60px;
     margin: 20px;
     padding: 10px;
     text-align: center;
-    font-size: 60px;
+    
+    @media(max-width:768px){
+        font-size: 40px;
+    }
 }
 
 .st{
-    color: $color-secundario;
+    @include resalta-texto($color-secundario,0px 3px 15px #000000);
     margin: 20px;
     padding: 10px;
     text-align: center;
     font-size: 40px;
+    @media(max-width:768px){
+        font-size: 30px;
+    }
 }
+
+
+
+

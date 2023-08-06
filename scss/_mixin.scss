@@ -1,0 +1,9 @@
+@mixin resalta-texto($color,$text-shadow) {
+    color: $color;
+    text-shadow: $text-shadow;
+  }
+
+
+
+  /*color: $color-secundario;
+    text-shadow: 0px 3px 15px #000000;*/

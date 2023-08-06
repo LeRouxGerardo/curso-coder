@@ -1,60 +1,76 @@
 
 .navegador{
-    @media(max-width:576px){
+    @media(max-width:768px){
         width: 20px;
     }    
     .menu{
-        @media(max-width:576px){
-            display: block;
-        color: $color-secundario;
-        font-size:50px;
-        margin: 10px;
-        &:hover + ul {
-            left: 0px;
-        }
-        }
         display: none;
-    
-     }
-}
-ul{
-    @media(max-width:576px){
-        position: fixed;
-        top: 0;
-        left: -500px;
-        background-color: rgba(255, 255, 255, 0.893);
-        width: 70vw;
-        height: 80vh;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-        padding-top: 20px;
-        transition: 0,5s;
-        &:hover {
-            left: 0px;
-            z-index: 1;
-        }
-    }
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    li{
-        display: block;
-        padding: 30px;
-        margin: 30px;
-        font-size: 30px;
-        a{
-            @media(max-width:576px){
-            color: black;
-        font-size: 30px;
-            }
-            text-decoration: none;
+        @media(max-width:768px){
+            display: block;
             color: $color-secundario;
+            font-size:50px;
+            margin: 10px;
+            &:hover + ul {
+            left: 0px;
+            }
         }
+       
     
-    }    
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    
+        @media(max-width:768px){
+            position: fixed;
+            top: 0;
+            left: -600px;
+            background-color: rgba(255, 255, 255, 0.893);
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: solid 5px black;
+            width: 70vw;
+            height: 90vh;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            padding-top: 20px;
+            transition: 0,5s;
+            &:hover {
+                left: 0px;
+                z-index: 1;
+            }
+            
+        }
+        
+        li{
+            display: block;
+            padding: 30px;
+            margin: 30px;
+            
+        
+            a{
+                text-decoration: none;
+                @include resalta-texto($color-secundario,0px 3px 15px #000000);
+                font-size: 40px;
+                
+                @media(max-width:768px){
+                    @include resalta-texto(black, 4px 3px 0 #7A7A7A);
+                    font-size: 40px;
+                    padding: 15px;
+                }
+                
+                @media(max-width:576px){
+                    font-size: 30px;
+                    padding: 5px;
+                }        
+            }    
+        } 
+    }
+
 }
 
 
-
-
+    
