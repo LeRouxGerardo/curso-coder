@@ -9,11 +9,11 @@
         
             margin-top: 24px;
             width: auto;
-            height: 200px;
+            height: 250px;
                    
     }
     @media(max-width:576px){
-        height: 130px;
+        height: 180px;
     }
 
     .logo{
@@ -27,6 +27,7 @@
             height: 100px;
         }
         @media(max-width:576px){
+            transform: translate(-50%, 90%);
             height: 55px;
      }
 } 

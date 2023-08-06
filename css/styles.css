@@ -34,12 +34,12 @@
   .portada {
     margin-top: 24px;
     width: auto;
-    height: 200px;
+    height: 250px;
   }
 }
 @media (max-width: 576px) {
   .portada {
-    height: 130px;
+    height: 180px;
   }
 }
 .portada .logo {
@@ -57,6 +57,7 @@
 }
 @media (max-width: 576px) {
   .portada .logo {
+    transform: translate(-50%, 90%);
     height: 55px;
   }
 }
@@ -325,7 +326,7 @@
 @media (max-width: 768px) {
   .formulario {
     display: block;
-    width: 650px;
+    width: auto;
   }
   .formulario .dato {
     display: flex;
@@ -335,11 +336,6 @@
   }
   .formulario .dato input {
     padding-right: 2px;
-  }
-}
-@media (max-width: 768px) and (max-width: 576px) {
-  .formulario {
-    width: auto;
   }
 }
 .formulario .dato input {
