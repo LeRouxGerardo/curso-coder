@@ -7,7 +7,7 @@
 }
 
 .musica iframe, .video iframe {
-  border: 5px solid blanchedalmond;
+  border: 5px solid white;
   border-radius: 50px;
 }
 
@@ -407,7 +407,7 @@ footer .redes a i {
 }
 @media (max-width: 768px) {
   footer .redes a i {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
